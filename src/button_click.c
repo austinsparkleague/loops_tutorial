@@ -28,12 +28,12 @@ void select_click_handler(ClickRecognizerRef recognizer, void *context) {
 	snprintf(buffer, sizeof(buffer), isEven ? "Even letter is %s" : "Our letter is %s", alphabet[our_variable]);
 	text_layer_set_text(text_layer, buffer);
 	
-	for(int i = 0; i < our_variable; i++){
+	for(int i = 0; i < 5; i++){
 		APP_LOG(APP_LOG_LEVEL_INFO, "for %d", i);
 	}
 	
 	int i = 0;
-	while(i < our_variable){
+	while(i < 5){
 		APP_LOG(APP_LOG_LEVEL_INFO, "while %d", i);
 		i++;
 	}
